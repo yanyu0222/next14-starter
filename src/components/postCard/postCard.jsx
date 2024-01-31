@@ -6,14 +6,14 @@ const PostCard = ({post}) => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
-        <div className={styles.imgContainer}>
+        {post.img && <div className={styles.imgContainer}>
           <Image
-            src="https://images.unsplash.com/photo-1705179573286-495f1b4fabaf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={post.img}
             alt=""
             fill
             className={styles.img}
           />
-        </div>
+        </div>}
         <span className={styles.date}>01.01.2024</span>
       </div>
       <div className={styles.bottom}>
