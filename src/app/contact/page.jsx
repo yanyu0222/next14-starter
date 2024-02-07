@@ -4,6 +4,10 @@ import styles from "./contact.module.css";
 // import HydrationTest from "@/components/hydrationTest";
 
 // const HydrationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), {ssr: false});
+export const metadata = {
+  title:"Contact Page",
+  description: "Next.js starter app",
+};
 
 function ContactPage() {
   // const a = Math.random();
